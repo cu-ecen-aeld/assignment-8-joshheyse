@@ -1,0 +1,17 @@
+#!/bin/sh
+
+case "$1" in
+start)
+  echo "Loading scull driver..."
+  scull_load
+  ;;
+stop)
+  echo "Unloading scull driver..."
+  scull_unload
+  ;;
+*)
+  echo "usage: $0 {start|stop}"
+  exit 1
+  ;;
+esac
+exit 0

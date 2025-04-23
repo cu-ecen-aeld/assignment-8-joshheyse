@@ -1,0 +1,19 @@
+#!/bin/sh
+
+case "$1" in
+start)
+  echo "Loading fault and helloworld drivers..."
+  misc-modules_load faulty
+  modprobe hello
+  ;;
+stop)
+  echo "Unloading fault and helloworld driver..."
+  misc-modules_unload faulty
+  rmmod hello
+  ;;
+*)
+  echo "usage: $0 {start|stop}"
+  exit 1
+  ;;
+esac
+exit 0

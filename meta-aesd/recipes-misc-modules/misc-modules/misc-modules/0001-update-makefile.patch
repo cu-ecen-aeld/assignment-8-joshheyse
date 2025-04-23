@@ -1,0 +1,23 @@
+From 6ec3e082d0d7670361fa30c9ee00cceb02a4b94e Mon Sep 17 00:00:00 2001
+From: Josh Heyse <josh@heyse.us>
+Date: Tue, 22 Apr 2025 22:49:13 -0500
+Subject: [PATCH] update makefile
+
+---
+ Makefile | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 7b08c49..0966da5 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,8 +1,5 @@
+ 
+-SUBDIRS =  misc-progs misc-modules \
+-           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
+-	   pci usb\
+-	   sbull snull short
++SUBDIRS =  misc-modules
+ 
+ all: subdirs
+ 
